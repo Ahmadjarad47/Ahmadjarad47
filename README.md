@@ -37,12 +37,28 @@ Freelance developer since 2022. I deliver production web platforms end to end: r
 
 ## 💼 Recent Work (2026)
 
-### IPM: Internal Project Management System · Full-Stack Developer · [backend](https://github.com/Ahmadjarad47/ipm-backend) · [frontend](https://github.com/Ahmadjarad47/ipm-web)
-Open-source project-management platform built module by module from a formal SRS.
-- **Backend (.NET 10):** Clean Architecture + CQRS (Mediator), EF Core/PostgreSQL 17, Redis, SignalR, Serilog + Seq, OpenAPI (Scalar).
-- **Features:** JWT + refresh tokens with default-deny permissions at system and project scope · hierarchical work items with cycle-safe relations, custom fields and configurable workflows · sequential approvals engine (delegation, self-approval ban, transition gating) · Git integration with HMAC-signed webhooks for GitHub/GitLab/Gitea · tamper-evident hash-chained audit log · real-time and Telegram notifications through an outbox worker · dashboard, global search and Excel reports.
-- **Frontend (Angular 22):** Arabic RTL, standalone components, signals, zoneless, generic REST/list/lookup stores, optimistic concurrency (ETag), accessibility checks.
-- **Quality:** domain unit tests, architecture tests, integration tests on real PostgreSQL/Redis (Testcontainers), requirements-to-tests traceability. Shipped with Docker + nginx.
+### ⭐ IPM: Internal Project Management Platform · Full-Stack Developer
+**Open source** · [ipm-backend](https://github.com/Ahmadjarad47/ipm-backend) (.NET 10) · [ipm-web](https://github.com/Ahmadjarad47/ipm-web) (Angular 22) · MIT
+
+**The idea.** Organisations run projects across chat threads, spreadsheets and tools that each force a fixed process. IPM is one **single source of truth** for projects, tasks, owners and **approval decisions**. Every change records who made it, when, and who approved it, and the system never hard-codes a workflow or status name. Admins define their own work-item types, fields, statuses, transitions, approval chains and roles from the UI. It is an Arabic-first, self-hosted alternative in the spirit of OpenProject and Jira, built around governance and auditability.
+
+**What it does**
+| Area | What I built |
+|---|---|
+| 🧩 **Flexible work model** | Admin-defined work-item types (Feature, Task, Bug…) with custom fields, parent/child hierarchy and cross-type dependencies; cycle detection; board, list and tree views; bulk edit; project templates. |
+| 🔄 **Configurable workflows** | Statuses and transitions per type and per project, guarded by permissions, open dependencies and pending approvals. |
+| ✅ **Hierarchical approvals engine** | Sequential multi-stage approvals chosen by rules (project, type, stage); self-approval ban; delegation; admin override with a reason; requests become invalid when a protected field changes; sensitive edits go through approval and are applied atomically. |
+| 🔐 **Dynamic permissions** | Around 45 permission keys at system and project scope, default-deny with explicit denies, privilege-escalation guards, JWT + refresh-token rotation, lockout and rate limiting. |
+| 🔗 **Git integration** | Connect GitHub, GitLab or Gitea repositories; HMAC-signed webhooks with replay protection and de-duplication; commits and PRs mentioning `PROJ-123` link to the work item automatically. |
+| 🧾 **Tamper-evident audit** | Hash-chained audit log that can be verified and exported, plus human-readable activity feeds on every entity. |
+| 🔔 **Real-time notifications** | SignalR push in the browser, plus Telegram notifications delivered by a transactional outbox worker with retries and rate limits. |
+| 📊 **Insight** | KPI dashboard, project timeline, global search and Excel work reports. |
+
+**Engineering**
+- **Backend:** .NET 10 · Clean Architecture · CQRS (source-generated Mediator) · EF Core + PostgreSQL 17 · Redis · SignalR · FluentValidation · Serilog + Seq · Scalar/OpenAPI. **130+ REST endpoints** (76 commands, 57 queries), Arabic problem+json errors, ETag/If-Match optimistic concurrency.
+- **Frontend:** Angular 22 with standalone components, signals, zoneless change detection and `OnPush` everywhere; generic typed REST client and list/lookup stores; fully RTL, keyboard-accessible with contrast checks.
+- **Quality:** **400+ backend tests** (domain, architecture rules, integration tests on real PostgreSQL and Redis through Testcontainers, SignalR) and **170+ frontend tests**, including SRS acceptance rules and an API-contract guard. Every requirement is traced to its tests.
+- **Process:** built from a formal SRS (`IPM-SRS-001`) in 12 modules, each delivered spec → domain → storage → application → API. Shipped with Docker, nginx and HTTPS.
 
 ### ERP101: Industrial Manufacturing ERP · Full-Stack Developer *(in development)*
 ERP for industrial manufacturing, from engineering through production.
@@ -59,8 +75,8 @@ Designed and deployed a working prototype across **two VPS servers** with region
 | Repository | Description |
 |---|---|
 | [algobytes-architecture](https://github.com/Ahmadjarad47/algobytes-architecture) | .NET + Angular starter: auth/OTP, RBAC + ABAC policies, dynamic custom fields, audit logs, health probes |
-| [ipm-backend](https://github.com/Ahmadjarad47/ipm-backend) | Project-management API on .NET 10: Clean Architecture, CQRS, PostgreSQL, Redis, SignalR, approvals engine, Git webhooks, hash-chained audit log, Testcontainers integration tests |
-| [ipm-web](https://github.com/Ahmadjarad47/ipm-web) | Angular 22 Arabic-first RTL client for IPM: signals, zoneless, server-driven workflows, real-time notifications, SRS-traced tests |
+| ⭐ [ipm-backend](https://github.com/Ahmadjarad47/ipm-backend) | **IPM API:** self-hosted project-management platform with configurable workflows, a hierarchical approvals engine, dynamic permissions, Git integration and a tamper-evident audit log. .NET 10, CQRS, PostgreSQL, Redis, SignalR, 130+ endpoints, 400+ tests |
+| ⭐ [ipm-web](https://github.com/Ahmadjarad47/ipm-web) | **IPM web app:** Arabic-first RTL client in Angular 22 (signals, zoneless): boards, work-item trees, approvals inbox, admin-configurable types/workflows/roles, real-time notifications |
 
 ## 🎓 Education & Content
 
