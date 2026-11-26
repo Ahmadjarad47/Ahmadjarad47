@@ -60,11 +60,23 @@ Freelance developer since 2022. I deliver production web platforms end to end: r
 - **Quality:** **400+ backend tests** (domain, architecture rules, integration tests on real PostgreSQL and Redis through Testcontainers, SignalR) and **170+ frontend tests**, including SRS acceptance rules and an API-contract guard. Every requirement is traced to its tests.
 - **Process:** built from a formal SRS (`IPM-SRS-001`) in 12 modules, each delivered spec → domain → storage → application → API. Shipped with Docker, nginx and HTTPS.
 
-### ERP101: Industrial Manufacturing ERP · Full-Stack Developer *(in development)*
-ERP for industrial manufacturing, from engineering through production.
-- **Features:** visual bill-of-materials tree with cost roll-up · make-or-buy decisions (MCDM) · 10-stage purchasing workflow with RFQs and suppliers · warehouses and stock movements (FIFO) · production routing with Gantt scheduling · task tracking · roles and permissions.
-- **Backend:** .NET 10 Clean Architecture, CQRS (source-generated Mediator), PostgreSQL, Redis, JWT, Arabic problem+json errors, ETag concurrency, audit log, architecture tests, Docker Compose + Caddy deployment.
-- **Frontend:** Angular 22 with Clean Architecture (domain / application / infrastructure), signal stores, light/dark design tokens, RTL.
+### ⭐ Itqan (إتقان): Manufacturing Planning Platform · Full-Stack Developer *(in active development)*
+**Open source** · [itqan-backend](https://github.com/Ahmadjarad47/itqan-backend) (.NET 10) · [itqan-web](https://github.com/Ahmadjarad47/itqan-web) (Angular 22) · MIT
+
+**The idea.** A manufacturer building a complex product has to answer the same questions for thousands of parts: *what is it made of, what does it cost, do we make it or buy it, who supplies it, when is it produced, and is it in stock?* Usually those answers sit in separate spreadsheets that never agree. Itqan ("mastery and precision in craft") connects them all through one **product tree (BOM)**, **from product tree to finished product**.
+
+| Stage | What I built |
+|---|---|
+| 🌳 **Engineer** | Unlimited-depth product tree per project with drill-down explorer and org-chart diagram; drawings, quality files and materials on every part; tree cloning between projects and versions. |
+| 💰 **Cost** | Live bottom-up cost roll-up through the whole tree. |
+| ⚖️ **Decide** | Mandatory **MAKE / BUY** decision per part, supported by multi-criteria scoring (MCDM). |
+| 🛒 **Buy** | 10-stage purchasing workflow: requests, RFQs, quotes, supplier comparison and receipt into the warehouse. |
+| 🏭 **Make** | Production routing (operations, stations, setup and run times, consumables, quality and returns) with a filterable Gantt chart. |
+| 📦 **Store** | Warehouses, requisitions, stock movements, FIFO costing and warehouse reports. |
+| ✅ **Track** | Manager and employee task screens with chat, roles and permissions, and admin-defined custom fields on every entity. |
+
+- **Backend:** .NET 10 · Clean Architecture · CQRS (source-generated Mediator) · PostgreSQL · Redis · JWT with refresh-token rotation · Arabic problem+json errors · ETag concurrency · audit log · architecture tests · Docker Compose + Caddy. 140+ endpoints across 8 modules, built spec → domain → storage → application → API.
+- **Frontend:** Angular 22 (signals, zoneless) with Clean Architecture (domain / application / infrastructure ports), signal stores, light/dark design tokens, fully RTL; runs on its own with seeded demo data.
 
 ## 🔐 Secure Distributed System (graduation project)
 
@@ -76,6 +88,8 @@ Designed and deployed a working prototype across **two VPS servers** with region
 |---|---|
 | [algobytes-architecture](https://github.com/Ahmadjarad47/algobytes-architecture) | .NET + Angular starter: auth/OTP, RBAC + ABAC policies, dynamic custom fields, audit logs, health probes |
 | ⭐ [ipm-backend](https://github.com/Ahmadjarad47/ipm-backend) | **IPM API:** self-hosted project-management platform with configurable workflows, a hierarchical approvals engine, dynamic permissions, Git integration and a tamper-evident audit log. .NET 10, CQRS, PostgreSQL, Redis, SignalR, 130+ endpoints, 400+ tests |
+| ⭐ [itqan-backend](https://github.com/Ahmadjarad47/itqan-backend) | **Itqan API:** manufacturing planning platform covering BOM tree, live cost roll-up, make-or-buy (MCDM), 10-stage procurement, production routing, warehouses with FIFO costing, and tasks. .NET 10, CQRS, PostgreSQL, Redis |
+| ⭐ [itqan-web](https://github.com/Ahmadjarad47/itqan-web) | **Itqan web app:** Arabic-first RTL Angular 22 client with product-tree explorer, cost roll-up, procurement tracker, Gantt production plan and warehouse screens |
 | ⭐ [ipm-web](https://github.com/Ahmadjarad47/ipm-web) | **IPM web app:** Arabic-first RTL client in Angular 22 (signals, zoneless): boards, work-item trees, approvals inbox, admin-configurable types/workflows/roles, real-time notifications |
 
 ## 🎓 Education & Content
