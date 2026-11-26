@@ -35,6 +35,21 @@ Freelance developer since 2022. I deliver production web platforms end to end: r
 | [Mazad Syria](https://syriamazad.com) | Full-Stack Developer | Auction platform: real-time updates, concurrency-aware bidding rules, rate limiting |
 | [AOM Engineering](https://aom-engineering.de) | Full-Stack Developer | DDD-based corporate platform with Redis performance work and hardened deployment |
 
+## 💼 Recent Work (2026)
+
+### IPM: Internal Project Management System · Full-Stack Developer · [backend](https://github.com/Ahmadjarad47/ipm-backend) · [frontend](https://github.com/Ahmadjarad47/ipm-web)
+Open-source project-management platform built module by module from a formal SRS.
+- **Backend (.NET 10):** Clean Architecture + CQRS (Mediator), EF Core/PostgreSQL 17, Redis, SignalR, Serilog + Seq, OpenAPI (Scalar).
+- **Features:** JWT + refresh tokens with default-deny permissions at system and project scope · hierarchical work items with cycle-safe relations, custom fields and configurable workflows · sequential approvals engine (delegation, self-approval ban, transition gating) · Git integration with HMAC-signed webhooks for GitHub/GitLab/Gitea · tamper-evident hash-chained audit log · real-time and Telegram notifications through an outbox worker · dashboard, global search and Excel reports.
+- **Frontend (Angular 22):** Arabic RTL, standalone components, signals, zoneless, generic REST/list/lookup stores, optimistic concurrency (ETag), accessibility checks.
+- **Quality:** domain unit tests, architecture tests, integration tests on real PostgreSQL/Redis (Testcontainers), requirements-to-tests traceability. Shipped with Docker + nginx.
+
+### ERP101: Industrial Manufacturing ERP · Full-Stack Developer *(in development)*
+ERP for industrial manufacturing, from engineering through production.
+- **Features:** visual bill-of-materials tree with cost roll-up · make-or-buy decisions (MCDM) · 10-stage purchasing workflow with RFQs and suppliers · warehouses and stock movements (FIFO) · production routing with Gantt scheduling · task tracking · roles and permissions.
+- **Backend:** .NET 10 Clean Architecture, CQRS (source-generated Mediator), PostgreSQL, Redis, JWT, Arabic problem+json errors, ETag concurrency, audit log, architecture tests, Docker Compose + Caddy deployment.
+- **Frontend:** Angular 22 with Clean Architecture (domain / application / infrastructure), signal stores, light/dark design tokens, RTL.
+
 ## 🔐 Secure Distributed System (graduation project)
 
 Designed and deployed a working prototype across **two VPS servers** with regional data isolation: WireGuard tunnels, authenticated relay services, AES-256 / ChaCha20-Poly1305 encryption, digital signatures, replay protection, and a secure file pipeline with ClamAV scanning.
@@ -44,10 +59,8 @@ Designed and deployed a working prototype across **two VPS servers** with region
 | Repository | Description |
 |---|---|
 | [algobytes-architecture](https://github.com/Ahmadjarad47/algobytes-architecture) | .NET + Angular starter: auth/OTP, RBAC + ABAC policies, dynamic custom fields, audit logs, health probes |
-| [Aljawhara.NET](https://github.com/Ahmadjarad47/Aljawhara.NET) | E-commerce API on .NET 10 with Clean Architecture and PostgreSQL |
-| [Aljawhara](https://github.com/Ahmadjarad47/Aljawhara) | Angular 20 Arabic-first storefront |
-| [CRM.Medical](https://github.com/Ahmadjarad47/CRM.Medical) | Medical CRM backend: CQRS, JWT, real-time, tests |
-| [Rezqa](https://github.com/Ahmadjarad47/Rezqa) | ASP.NET Core Web API: Clean Architecture + CQRS |
+| [ipm-backend](https://github.com/Ahmadjarad47/ipm-backend) | Project-management API on .NET 10: Clean Architecture, CQRS, PostgreSQL, Redis, SignalR, approvals engine, Git webhooks, hash-chained audit log, Testcontainers integration tests |
+| [ipm-web](https://github.com/Ahmadjarad47/ipm-web) | Angular 22 Arabic-first RTL client for IPM: signals, zoneless, server-driven workflows, real-time notifications, SRS-traced tests |
 
 ## 🎓 Education & Content
 
