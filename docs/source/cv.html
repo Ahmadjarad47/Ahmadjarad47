@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Ahmad Jarad - Freelance Full-Stack Developer CV</title>
+<style>
+@page { size: Letter; margin: 26pt 36pt 30pt; @bottom-center { content: "Ahmad Jarad | Freelance Full-Stack Developer"; font: 7pt Arial, "Liberation Sans", sans-serif; color: #646464; } }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, "Liberation Sans", sans-serif; color: #222; font-size: 8pt; line-height: 1.24; }
+a { color: #1f5a7a; text-decoration: none; }
+header { text-align: center; margin-bottom: 4pt; }
+h1 { color: #1f5a7a; font-size: 19pt; }
+.headline { font-weight: bold; font-size: 10.5pt; color: #202020; margin-top: 2pt; }
+.contact { font-size: 8.5pt; color: #202020; margin-top: 2pt; }
+h2 { color: #1f5a7a; font-size: 10.5pt; text-transform: uppercase; border-left: 5.7pt solid #1f5a7a; padding: 2pt 0 2pt 6pt; margin: 7pt 0 3pt -5.4pt; break-after: avoid; }
+p.sum { font-size: 8pt; }
+.skills div { font-size: 8.5pt; } .skills b { color: #1f5a7a; }
+.item { margin-top: 4pt; break-inside: avoid; }
+.t { font-weight: bold; font-size: 9pt; } .t i { font-weight: normal; }
+.meta { color: #555; font-size: 8pt; } .meta b { color: #555; }
+ul { list-style: none; margin-top: 1pt; }
+li { padding-left: 9pt; text-indent: -6pt; margin-left: 3pt; }
+li::before { content: "\2022"; font-weight: bold; margin-right: 3pt; }
+.badge { display: inline-block; font-size: 6.5pt; font-weight: bold; color: #1f5a7a; border: 0.75pt solid #1f5a7a; border-radius: 6pt; padding: 0 4pt; margin-left: 4pt; vertical-align: 1pt; }
+</style></head>
+<body>
+<header>
+  <h1>Ahmad Jarad</h1>
+  <div class="headline">Freelance Full-Stack Developer | .NET, Angular &amp; Secure Systems</div>
+  <div class="contact">ahmad222jarad@gmail.com | +49 1520 7610021 | Damascus, Syria</div>
+  <div class="contact">GitHub: <a href="https://github.com/Ahmadjarad47">github.com/Ahmadjarad47</a> | YouTube: <a href="https://youtube.com/@algorithmbytes">youtube.com/@algorithmbytes</a></div>
+</header>
+
+<h2>Professional Summary</h2>
+<p class="sum">Freelance Full-Stack Developer with client-project experience since 2022, delivering web platforms using ASP.NET Core, Angular, SQL databases, Redis, real-time communication, CI/CD, and VPS deployment. Experienced in requirements analysis, backend API design, frontend implementation, database modeling, authentication and authorization, production deployment, and post-release support. Author of two open-source enterprise platforms built from formal requirements: <b>IPM</b>, a project-management and approvals platform, and <b>Itqan</b>, a manufacturing planning platform. Both use .NET 10 Clean Architecture/CQRS and Angular 22, backed by hundreds of automated tests. Built and deployed a hands-on secure distributed system across two Hostinger VPS servers to validate encrypted inter-server communication, regional data isolation, auditability, secure file handling, and defense-in-depth controls.</p>
+
+<h2>Core Skills</h2>
+<div class="skills">
+  <div><b>Languages:</b> C#, JavaScript, TypeScript, C++</div>
+  <div><b>Backend &amp; Frontend:</b> ASP.NET Core (.NET 10), .NET Core API, Angular 22 (signals, zoneless), SignalR, gRPC, RabbitMQ</div>
+  <div><b>Architecture:</b> DDD, Modular Monolith, Microservices, Clean Architecture, CQRS, MVC, REST APIs, Outbox pattern</div>
+  <div><b>Data:</b> SQL Server, PostgreSQL, Redis, MySQL, Entity Framework Core</div>
+  <div><b>Testing:</b> xUnit, Testcontainers integration tests, architecture tests, Vitest, requirements-to-tests traceability</div>
+  <div><b>DevOps &amp; Infrastructure:</b> Docker, Ubuntu Linux, CI/CD, VPS, Hostinger, Nginx, Caddy, UFW, Git, Serilog/Seq</div>
+  <div><b>Security:</b> JWT, RBAC, OWASP Top 10, API Security, rate limiting, secure headers, audit logging, encryption, digital signatures, replay protection, HMAC-signed webhooks, secure file validation, ClamAV, WireGuard</div>
+</div>
+
+<h2>Freelance Experience</h2>
+<div class="item"><div class="t">Freelance Full-Stack Developer | 2022-Present</div>
+<ul>
+  <li>Deliver project-based solutions for clients, covering requirements, architecture, backend APIs, databases, Angular interfaces, real-time features, security, testing, CI/CD, VPS deployment, and production support according to project scope.</li>
+  <li>Work independently or within project teams, taking full ownership of assigned components and communicating technical trade-offs clearly to clients and collaborators.</li>
+</ul></div>
+
+<h2>Open-Source Projects</h2>
+<div class="item"><div class="t">IPM - Internal Project Management Platform <i>| Full-Stack Developer</i><span class="badge">OPEN SOURCE · MIT</span></div>
+<div class="meta">Repositories: <a href="https://github.com/Ahmadjarad47/ipm-backend">github.com/Ahmadjarad47/ipm-backend</a> | <a href="https://github.com/Ahmadjarad47/ipm-web">github.com/Ahmadjarad47/ipm-web</a></div>
+<div class="meta"><b>Technologies:</b> .NET 10, ASP.NET Core, CQRS (Mediator), EF Core, PostgreSQL 17, Redis, SignalR, JWT, Serilog/Seq, xUnit, Testcontainers, Angular 22, Vitest, Docker, Nginx</div>
+<ul>
+  <li>Built a self-hosted, Arabic-first platform that is a single source of truth for projects, tasks, owners and approval decisions; every change records who made it, when and who approved it, and no workflow is hard-coded.</li>
+  <li>Implemented admin-configurable work-item types, custom fields, workflows and roles; a sequential multi-stage approvals engine with delegation, a self-approval ban and transition gating; and default-deny permissions at system and project scope.</li>
+  <li>Added Git integration over HMAC-signed webhooks (GitHub/GitLab/Gitea), a tamper-evident hash-chained audit log, SignalR and Telegram notifications through a transactional outbox, a KPI dashboard, global search and Excel reports.</li>
+  <li>Delivered 130+ REST endpoints from a formal SRS in 12 modules, with 400+ backend tests (domain, architecture, integration on real PostgreSQL/Redis) and 170+ frontend tests traced to requirements.</li>
+</ul></div>
+<div class="item"><div class="t">Itqan - Manufacturing Planning Platform <i>| Full-Stack Developer (in development)</i><span class="badge">OPEN SOURCE · MIT</span></div>
+<div class="meta">Repositories: <a href="https://github.com/Ahmadjarad47/itqan-backend">github.com/Ahmadjarad47/itqan-backend</a> | <a href="https://github.com/Ahmadjarad47/itqan-web">github.com/Ahmadjarad47/itqan-web</a></div>
+<div class="meta"><b>Technologies:</b> .NET 10, ASP.NET Core, CQRS (Mediator), EF Core, PostgreSQL, Redis, JWT, xUnit, Testcontainers, Angular 22, TypeScript, Docker Compose, Caddy</div>
+<ul>
+  <li>Building a platform that connects engineering, costing, sourcing, purchasing, production and inventory through one product tree (BOM), from product tree to finished product.</li>
+  <li>Implemented unlimited-depth BOM with live cost roll-up, MAKE/BUY decisions supported by multi-criteria scoring (MCDM), a 10-stage purchasing workflow with RFQs and supplier comparison, production routing with Gantt scheduling, warehouses with FIFO stock costing, tasks and custom fields.</li>
+  <li>Designed the backend as 8 modules and 140+ endpoints with Arabic problem+json errors, ETag concurrency, refresh-token rotation and architecture tests; built the Angular frontend on Clean Architecture ports so the data source can be swapped.</li>
+</ul></div>
+
+<h2>Selected Client Projects</h2>
+<div class="item"><div class="t">Syrian Medical CRM / Al Mutawali Medical Laboratory <i>| Backend Developer</i></div>
+<div class="meta">Website: <a href="https://syrian-medical.tech">syrian-medical.tech</a> | Repository: <a href="https://github.com/Ahmadjarad47/CRM.Medical">github.com/Ahmadjarad47/CRM.Medical</a></div>
+<div class="meta"><b>Technologies:</b> .NET, ASP.NET Core API, EF Core, SQL Server, PostgreSQL, Redis, SignalR, RabbitMQ, gRPC, Docker, JWT, CI/CD, VPS</div>
+<ul>
+  <li>Worked as the backend developer for a production medical platform and CRM supporting laboratory workflows and internal operations.</li>
+  <li>Structured the solution into API, Application, Domain, Infrastructure, RealTime, and Tests projects and implemented authentication, authorization, validation, standardized responses, migrations, caching, storage, email, dashboard, accounting, store, chat, and notifications.</li>
+  <li>Configured CI/CD to restore, build, test, publish, deploy to a VPS, and restart the backend service.</li>
+</ul></div>
+<div class="item"><div class="t">Aljawhara Plus <i>| Full-Stack Developer &amp; UI Designer</i></div>
+<div class="meta">Website: <a href="https://aljawharaplus.com">aljawharaplus.com</a></div>
+<div class="meta"><b>Technologies:</b> .NET, Angular, Redis, Modular Monolith, CI/CD, VPS, Hostinger</div>
+<ul>
+  <li>Delivered a Kuwaiti production web platform as a freelance full-stack developer and UI designer.</li>
+  <li>Built backend modules, Angular workflows, Redis caching, real-time chat, notifications, and production deployment to Hostinger VPS.</li>
+  <li>Applied role-based authorization, validation, secure API conventions, rate limiting, restricted CORS, and secure production configuration.</li>
+</ul></div>
+<div class="item"><div class="t">Mazad Syria <i>| Full-Stack Developer</i></div>
+<div class="meta">Website: <a href="https://syriamazad.com">syriamazad.com</a></div>
+<div class="meta"><b>Technologies:</b> .NET, Angular, Redis, Modular Monolith, CI/CD, VPS</div>
+<ul>
+  <li>Developed an auction platform covering listing workflows, user interaction, real-time updates, Angular screens, chat, notifications, and release management.</li>
+  <li>Protected sensitive operations with authenticated endpoints, server-side authorization, validation, rate limiting, concurrency-aware workflows, and enforced auction rules.</li>
+</ul></div>
+<div class="item"><div class="t">AOM Engineering <i>| Full-Stack Developer</i></div>
+<div class="meta">Website: <a href="https://aom-engineering.de">aom-engineering.de</a></div>
+<div class="meta"><b>Technologies:</b> .NET, Angular, Redis, DDD, CI/CD, VPS</div>
+<ul>
+  <li>Contributed to a public engineering company platform using domain-driven design, Angular, Redis-supported performance improvements, deployment workflows, and real-time capabilities.</li>
+  <li>Applied secure API conventions, validation, controlled error handling, least-privilege access rules, and hardened deployment settings.</li>
+</ul></div>
+
+<h2>Additional Projects</h2>
+<div class="item"><div class="t">University of Bisha Student Communication Platform <i>| Full-Stack Developer</i></div>
+<div class="meta"><b>Technologies:</b> .NET, Angular, Redis, real-time chat, notifications</div>
+<ul>
+  <li>Built modules for student communication and graduation-project coordination across backend APIs and Angular screens.</li>
+  <li>Implemented authenticated real-time connections, access checks, validation, and protection of user-specific conversations and notifications.</li>
+</ul></div>
+<div class="item"><div class="t">Internal Correspondence &amp; Report Approval System <i>| Full-Stack Developer</i></div>
+<div class="meta"><b>Technologies:</b> .NET, Angular, Redis, Modular Monolith, workflow management, real-time notifications</div>
+<ul>
+  <li>Developed a private enterprise workflow system for reports and correspondence between a central organization and regional branches.</li>
+  <li>Designed hierarchical transitions, approvals and rejections, status tracking, RBAC, region-based visibility, central-office routing, and real-time communication.</li>
+  <li>Enforced server-side access control, regional data isolation, controlled state transitions, and audit logging.</li>
+</ul></div>
+<div class="item"><div class="t">Secure Distributed Information Management System - Graduation / Hands-on Training Project <i>| System Designer &amp; Full-Stack Developer</i></div>
+<div class="meta"><b>Technologies:</b> .NET, Angular, PostgreSQL, Docker, Ubuntu Server, two Hostinger VPS servers, WireGuard, Nginx, JWT, RBAC, AES-256 / ChaCha20-Poly1305, UFW, ClamAV</div>
+<ul>
+  <li>Designed and deployed a working distributed prototype across two Hostinger VPS servers to practice secure exchange of sensitive information while preserving regional data ownership and isolation.</li>
+  <li>Configured each server with its own API, database, secure storage, firewall, and audit logs, then implemented inter-server communication through WireGuard and authenticated relay services.</li>
+  <li>Applied and tested sender authentication, authorization, integrity checks, encryption, digital signatures, replay protection, rate limiting, secure headers, secrets separation, and least-privilege service exposure.</li>
+  <li>Built a secure file pipeline with type and size validation, isolated storage, randomized file names, ClamAV scanning, controlled downloads, and audit-friendly events.</li>
+</ul></div>
+
+<h2>Content Creation</h2>
+<div class="item"><div class="t">Algorithm Bytes - YouTube Channel | <a href="https://youtube.com/@algorithmbytes">youtube.com/@algorithmbytes</a></div>
+<ul><li>Create Arabic educational content covering .NET, Angular, algorithms, data structures, backend development, secure coding, cybersecurity fundamentals, and problem solving.</li></ul></div>
+
+<h2>Education</h2>
+<div><b>Bachelor's Degree in Computer Science</b> | University of Al-Ettihad, Syria | 2021-2025 | Damascus, Syria</div>
+
+<h2>Courses</h2>
+<div>C++ Advanced - New Horizons (2022/02-2022/04) | JavaScript - New Horizons (2022/07-2022/09) | ASP.NET Core - New Horizons (2022/09-2022/12)</div>
+
+<h2>Languages</h2>
+<div>Arabic | English | German</div>
+</body></html>

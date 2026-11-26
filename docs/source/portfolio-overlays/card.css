@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=block');
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { font-family: 'IBM Plex Sans Arabic', sans-serif; direction: rtl; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.wrap { padding: 3pt 3pt 4pt; }
+.card { background: #fff; border: 0.75pt solid #e4e0d3; border-top: 3pt solid #054239; border-radius: 9pt;
+  box-shadow: 0 1pt 3pt rgba(0,38,35,.10); padding: 9pt 12pt 8pt; overflow: hidden; }
+.head { display: flex; align-items: flex-start; gap: 7pt; }
+.num { background: #e1ede9; color: #054239; font-weight: 700; font-size: 8.2pt; border-radius: 7pt; min-width: 22pt; height: 17.5pt;
+  display: flex; align-items: center; justify-content: center; margin-top: 10pt; }
+.titles { flex: 1; }
+.title { color: #033530; font-weight: 700; font-size: 12.4pt; line-height: 1.45; }
+.sub { color: #5f6662; font-size: 7.9pt; line-height: 1.4; }
+.pills { display: flex; gap: 4pt; margin-top: 10pt; }
+.pill { font-size: 7.5pt; font-weight: 600; border-radius: 9pt; padding: 2.5pt 8pt; line-height: 1.5; }
+.pill.dev { background: #f8eed8; color: #a8741a; }
+.pill.oss { background: #e1ede9; color: #054239; }
+.meta { background: #faf9f5; border-radius: 6pt; margin-top: 6pt; padding: 4.5pt 9pt; font-size: 7.5pt; color: #5f6662; line-height: 1.6; }
+.meta b { color: #054239; }
+.meta .dot { color: #b9a779; margin: 0 6pt; }
+.rows { margin-top: 4pt; }
+.row { display: flex; gap: 8pt; padding: 1.5pt 0; }
+.row .k { width: 58pt; flex: none; color: #7d6c4c; font-weight: 700; font-size: 7.5pt; line-height: 1.85; }
+.row .v { flex: 1; color: #3d3a3b; font-size: 8pt; line-height: 1.75; }
+.tags { display: flex; flex-wrap: wrap; gap: 3pt; margin-top: 6pt; }
+.tag { background: #e1ede9; color: #054239; font-size: 7pt; border-radius: 4pt; padding: 2pt 6pt; line-height: 1.45; direction: ltr; }
+.foot { border-top: 0.75pt dashed #e4e0d3; margin-top: 8pt; padding-top: 6pt; font-size: 7.5pt; color: #2c6a5f; }
+.foot a { color: #2c6a5f; text-decoration: none; }
+.foot .sep { color: #b9a779; margin: 0 5pt; }
